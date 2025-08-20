@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <form method="post" action="pasodatos.php">
+        <div class="titulo">
+            <h2> SKY S.A.S<br> MANTENIMIENTO</h2>
+        </div>
+
+
+        <DIV>
+            <label for="ORDEN" class="formulario__label">ORDEN:</label>
+            <input type="text" id="ORDEN" value="" name="ORDEN">
+
+            <label for="EQUIPO" class="formulario__label">EQUIPO O AREA:</label>
+            <select type="text" name="EQUIPO" class="formulario__input" id="EQUIPO" required>
+                <option value="">SELECCIONA</option>
+        <option value="Aires acondicionados industriales ">Aires acondicionados industriales </option>
+        <option value="Apilador electrico 1.2 TON ">Apilador electrico 1.2 TON </option>
+        <option value="Apilador electrico 1.5 TON">Apilador electrico 1.5 TON</option>
+        <option value="Banda codificadora ">Banda codificadora </option>
+        <option value="Bomba neumatica ">Bomba neumatica </option>
+        <option value="Caldera">Caldera</option>
+        <option value="Chiller">Chiller</option>
+        <option value="Codificadora  smart ( int jet)">Codificadora  smart ( int jet)</option>
+        <option value="Codificadora laser">Codificadora laser</option>
+        <option value="Codificadora zanazi">Codificadora zanazi</option>
+        <option value="Compresor Tornillo ">Compresor Tornillo </option>
+        <option value="Cortadora de fibra ">Cortadora de fibra </option>
+        <option value="Cortadora para cera de brackets ">Cortadora para cera de brackets </option>
+        <option value="Desionizador de agua ">Desionizador de agua </option>
+        <option value="Devanadora de bobina x 10">Devanadora de bobina x 10</option>
+        <option value="Devanadora de bobina x 6">Devanadora de bobina x 6</option>
+        <option value="Devanadora de carrete x 2">Devanadora de carrete x 2</option>
+        <option value="Devanadora de carrete x 4">Devanadora de carrete x 4</option>
+        <option value="Devanadora de carrete x 8">Devanadora de carrete x 8</option>
+        <option value="Encartonadora ">Encartonadora </option>
+        <option value="Encerdadora">Encerdadora</option>
+        <option value="Encerdadora  brazo robotico">Encerdadora  brazo robotico</option>
+        <option value="Encintadora de cajas ">Encintadora de cajas </option>
+        <option value="Entorchadora  de cepillos interproximales">Entorchadora  de cepillos interproximales</option>
+        <option value="ENVASADORA ">ENVASADORA </option>
+        <option value="Envasadora de piston pequeña  - Enavasadora de enjuegue - 6 boquillas">Envasadora de piston pequeña  - Enavasadora de enjuegue - 6 boquillas</option>
+        <option value="Envasadora de piston pequeña - Envasadora de jabon - 2 boquilla ">Envasadora de piston pequeña - Envasadora de jabon - 2 boquilla </option>
+        <option value="Envasadora y selladora de colapsible ">Envasadora y selladora de colapsible </option>
+        <option value="Inyectora">Inyectora</option>
+        <option value="Inyectora Demand ">Inyectora Demand </option>
+        <option value="Llenadora volumetrica neumatica con dos boquillas ">Llenadora volumetrica neumatica con dos boquillas </option>
+        <option value="Llenadora, tapadora y etiquetadora ">Llenadora, tapadora y etiquetadora </option>
+        <option value="Malacate">Malacate</option>
+        <option value="Marmita de preparacion">Marmita de preparacion</option>
+        <option value="Mezclador de semisolidos - Reactor ">Mezclador de semisolidos - Reactor </option>
+        <option value="Mezcladora  de pigmentos">Mezcladora  de pigmentos</option>
+        <option value="Molino">Molino</option>
+        <option value="Montacargas">Montacargas</option>
+        <option value="Omosis inversa ">Omosis inversa </option>
+        <option value="Paneles solares ">Paneles solares </option>
+        <option value="Pulidora ">Pulidora </option>
+        <option value="Revelador ">Revelador </option>
+        <option value="Secador de aire">Secador de aire</option>
+        <option value="Secador de aire industrial ">Secador de aire industrial </option>
+        <option value="Selladora de pedal">Selladora de pedal</option>
+        <option value="Tampo">Tampo</option>
+        <option value="Tanque de preparacion  enjuagues ">Tanque de preparacion  enjuagues </option>
+        <option value="Tanque de preparacion  gel y jabon ">Tanque de preparacion  gel y jabon </option>
+        <option value="Tanque de preparacion enjuegues ">Tanque de preparacion enjuegues </option>
+        <option value="Tanque de revelador">Tanque de revelador</option>
+        <option value="Termoformadora, selladora y troqueladora ">Termoformadora, selladora y troqueladora </option>
+        <option value="Termoselladora ">Termoselladora </option>
+        <option value="Torre de enfriamiento">Torre de enfriamiento</option>
+        <option value="Transformador elevador">Transformador elevador</option>
+        <option value="Troqueladora SE-20">Troqueladora SE-20</option>
+        <option value="Tunel de termoencogido">Tunel de termoencogido</option>
+        <option value="Ultra sonido ">Ultra sonido </option>
+        <option value="ventiladores industriales ">ventiladores industriales </option>
+        <option value="Zunchadora">Zunchadora</option>
+        
+
+</select>
+
+            <label for="TIPO_DE_MANTENIMIENTO" class="formulario__label">TIPO DE MANTENIMIENTO:</label>
+            <select type="text" name="TIPO_DE_MANTENIMIENTO" class="formulario__input" id="TIPO_DE_MANTENIMIENTO" required>
+
+<option value="">SELECCIONA</option>
+<option value="PREVENTIVO">PREVENTIVO</option>
+<option value="CORRECTIVO">CORRECTIVO</option>
+<option value="OTROS">OTROS</option>
+
+
+</select>
+            <label for="FECHA" class="formulario__label">FECHA:</label>
+            <input type="date" id="FECHA" value="" name="FECHA">
+
+            <label for="SERVICIO" class="formulario__label">DESCRIPCION DEL SERVICIO SOLICITADO:</label>
+            <input type="text" id="SERVICIO" value="" name="SERVICIO">
+
+            <label for="TIEMPO_EMPLEADO" class="formulario__label">TIEMPO EMPLEADO EN EL MMTTO:</label>
+            <input type="text" id="TIEMPO_EMPLEADO" value="" name="TIEMPO_EMPLEADO" style="background-color: rgb(232, 235, 101);">
+
+
+            <label for="RESPONSABLE" class="formulario__label">RESPONSABLE:</label>
+            <select type="text" name="RESPONSABLE" class="formulario__input" id="RESPONSABLE" required>
+
+        <option value="">SELECCIONA</option>
+        <option value="DIEGO CANO">DIEGO CANO</option>
+        <option value="YEFRY LUJAN">YEFRY LUJAN</option>
+        <option value="JHON QUINTERO">JHON QUINTERO</option>
+        
+      
+    </select>
+
+
+            <label for="FECHA_PROGRAMACION" class="formulario__label">FECHA PROGRAMACION:</label>
+            <input type="date" id="FECHA_PROGRAMACION" value="" name="FECHA_PROGRAMACION">
+
+            <label for="FECHA_DE_ENTREGA" class="formulario__label">FECHA DE ENTREGA:</label>
+            <input type="date" id="FECHA_DE_ENTREGA" value="" name="FECHA_DE_ENTREGA">
+
+            <label for="TRABAJO_EJECUTADO" class="formulario__label">TRABAJO EJECUTADO:</label>
+            <input type="date" id="TRABAJO_EJECUTADO" value="" name="TRABAJO_EJECUTADO" style="background-color:rgb(232, 235, 101);">
+            <center>
+                <input type="submit" value="Enviar" class="btn btn-success" name="btn1">
+                <input type="submit" value="Consultar" class="btn btn-info" name="btn2">
+            </center>
+        </DIV>
+    </form>
+</body>
+
+</html>
